@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .color{
+            display: flex;
+        }
+        .green {
+            background: green;
+            text-align: left;
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+            border: 1px solid;
+        }
+
+        .red {
+            background: red;
+            text-align: left;
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+            border: 1px solid;
+        }
+
+        .violet {
+            background: violet;
+            text-align: left;
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container">
+            <p>change background-color</p>
+            <p>Mouse click</p>
+            <div class="color">
+                <div class="green">Xanh</div>
+                <div class="red">Đỏ</div>
+                <div class="violet">Tím</div>
+            </div>
+        </div>
+    </div>
+   <script>
+     document.getElementsByClassName("green")[0].addEventListener("click",()=>{
+    document.getElementsByClassName("container")[0].style.background="green";
+    })
+    document.getElementsByClassName("red")[0].addEventListener("click",()=>{
+    document.getElementsByClassName("container")[0].style.background="red";})
+    document.getElementsByClassName("violet")[0].addEventListener("click",()=>{
+    document.getElementsByClassName("container")[0].style.background="violet";})
+   </script>
+</body>
+</html>

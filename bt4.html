@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 200px;
+        }
+        .content{
+            display: flex;
+            background-color: white;
+            width: 500px;
+            height: 80px;
+            justify-content: space-between;
+            margin-left: 200px;
+            align-items: center;
+            padding-left: 10px;
+            border-radius: 5px;
+            padding-right: 5px;
+            display: none;
+        }
+        .X{
+            background-color: white;
+            position: relative;
+            top: 0px;
+            height:15px;
+            border: none;
+            padding-bottom: 50px;
+        }
+       
+    </style>
+<body>
+    <div class="container">
+        <h1>Modal Example</h1>
+        <button class="btn">Open Model</button>
+        <div class="content">
+            <p>Some text in the modal</p>
+            <button class="X">X</button>
+        </div>
+    </div>
+    </style>
+</head>
+<body>
+ <script>
+    document.getElementsByClassName("btn")[0].addEventListener("click",()=>{
+    document.getElementsByClassName("content")[0].style.display="block".display="flex";
+    document.getElementsByClassName("container")[0].style.background="#999999";
+    document.getElementsByClassName("btn")[0].style.background="#8F8F8F";
+})
+document.getElementsByClassName("X")[0].addEventListener("click",()=>{
+    document.getElementsByClassName("content")[0].style.display="none";
+    document.getElementsByClassName("container")[0].style.background="white";
+    document.getElementsByClassName("btn")[0].style.background="#E5E5E5";
+})
+ </script>   
+</body>
+</html>
